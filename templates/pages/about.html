@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static%}
+{% block title %} About {% endblock %}
+{% block content %}
+<section id="showcase-inner" class="py-5 text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1 class="display-4">About Woxsen Campus Mart</h1>
+          <p class="lead">This application is for Woxsen University Students you can get the designed products, Gadgets, accesories, where you can buy, sell, rent your Products.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breadcrumb -->
+  <section id="bc" class="mt-3">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="{%url 'index'%}">
+              <i class="fas fa-home"></i> Home</a>
+          </li>
+          <li class="breadcrumb-item active"> About</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section id="about" class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h2>You get to find your perfect items designed Products by students and Second hand item here </h2>
+          <p class="lead">You Will recieve produts from Woxsen University only</p>
+          <img src="assets/img/about.jpg" alt="">
+          <p class="mt-4">'Woxsen Campus Mart' is a one stop platform to sell and buy all your used products at your comfort. This online exchange platform provides you ease of doing business within or around your college/ institute/school boundaries. All you need to do is Post your used products for exchange and you will find buyers in your campus only. A unique feature of this website is to sell multiple products in a single Ad. You can also take the privilege of giving things for free..</p>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="{% static 'C:\Users\gvine\Downloads\B-S-master\resources\Woxsen.jpg'%}" alt="Seller of the month">
+            <div class="card-body">
+              <h5 class="card-title">Creator</h5>
+              <h6 class="text-secondary">Vineeth & Xavier</h6>
+              <p class="card-text">This Application is created by Woxsen Univesrity MBA Business Analytics Students.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work" class="bg-dark text-white text-center">
+    <h2 class="display-4">Buy, Sell</h2>
+    <h4>In Woxsen Campus Mart</h4>
+    <hr>
+    <a href="{%url 'listings'%}" class="btn btn-secondary text-white btn-lg">View Our Featured Listings</a>
+  </section>
+
+{% endblock %}
