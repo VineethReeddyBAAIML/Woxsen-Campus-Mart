@@ -1,0 +1,11 @@
+asgiref==3.7.1
+backports.zoneinfo==0.2.1
+dj-database-url==2.0.0
+Django==4.2.1
+sqlparse==0.4.4
+typing_extensions==4.6.1
+gunicorn
+pillow==9.1.0
+psycopg2-binary==2.9.1
+django-crispy-forms
+whitenoise
