@@ -158,3 +158,5 @@ EMAIL_HOST_PASSWORD = 'pspcqvroxtycnlif'
 EMAIL_USE_TLS = True
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+CSRF_TRUSTED_ORIGINS=["https://woxsen-campus-mart-production.up.railway.app"] 
