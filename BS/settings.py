@@ -46,7 +46,8 @@ INSTALLED_APPS = [
     'listings',
     'accounts',
     'inquiry',
-    'crispy_forms'
+    'crispy_forms',
+    'bootstrap4'
 ]
 
 MIDDLEWARE = [
