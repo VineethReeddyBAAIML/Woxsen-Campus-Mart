@@ -16,7 +16,7 @@
         <form action="{% url 'create' %}" method="POST" enctype="multipart/form-data">
     {% endif %}
         {% csrf_token %}
-        {% crispy from %} <!-- {% crispy form %} instead of : {{form|crispy}} --> 
+        {{form|crispy}} <!-- {% crispy form %} instead of : {{form|crispy}} --> 
         {%if update %}
         <button class="btn btn-primary" type="submit">Update</button> 
         {% else %}
