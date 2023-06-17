@@ -60,7 +60,9 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
+
 ROOT_URLCONF = 'BS.urls'
+CRISPY_TEMPLATE_PACK='bootstrap4'
 
 TEMPLATES = [
     {
