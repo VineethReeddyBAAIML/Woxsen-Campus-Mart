@@ -13,7 +13,7 @@ def listings(request):
     page = request.GET.get('page')
     page_listings  = paginator.get_page(page)
     context = {
-        'listings': page_listings
+        'listings': page_listings,
         'today':today
     }
     return render(request, 'listings/listings.html', context)
