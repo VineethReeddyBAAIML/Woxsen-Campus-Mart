@@ -9,4 +9,4 @@ pillow==9.1.0
 psycopg2-binary==2.9.1
 whitenoise
 django-crispy-forms
-crispy-bootstrap4
+django-crispy-bootstrap4
