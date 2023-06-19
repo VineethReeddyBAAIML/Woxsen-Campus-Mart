@@ -15,7 +15,7 @@ import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATABASE_URL ="postgresql://postgres:HqxyatXAmlbVURIEDyIb@containers-us-west-29.railway.app:7645/railway"
+DATABASE_URL ="postgresql://postgres:y0jQqFuklXW3hSl8Xo0o@containers-us-west-79.railway.app:8034/railway"
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
