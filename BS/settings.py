@@ -167,7 +167,7 @@ EMAIL_HOST_PASSWORD = 'pspcqvroxtycnlif'
 EMAIL_USE_TLS = True
 
 # CRISPY_TEMPLATE_PACK = 'uni_form'
-CRISPY_ALLOWED_TEMPLATE_PACKS = ('bootstrap', 'uni_form', 'foundation-5')
+#CRISPY_ALLOWED_TEMPLATE_PACKS = ('bootstrap', 'uni_form', 'foundation-5')
 CRISPY_TEMPLATE_PACK = 'bootstrap'
 CSRF_TRUSTED_ORIGINS=["https://woxsen-campus-mart-production.up.railway.app"] 
 CORS_ALLOWED_ORIGINS = [
