@@ -58,12 +58,14 @@ def listing(request, pk):
         if str(pk) not in rate_listing:
             rate = True
     current_rating = 0
+    today = datetime.datetime.now().strftime("%I:%M%p on %B %d, %Y")
     if listing.no_of_rating:
         current_rating = listing.total_rating/listing.no_of_rating
     context = {
         'listing': listing,
         'favourite':favourite,
         'rate': rate,
+        'today': today,
         'current_rating': current_rating
 
     }
