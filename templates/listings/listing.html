@@ -97,14 +97,14 @@
                   <i class="fas fa-list-alt"></i> Category:
                   <span class="float-right">{{ listing.category}}</span>
                 </li>
-                <li class="list-group-item text-secondary">
+<!--                 <li class="list-group-item text-secondary">
                   <i class="fas fa-list-alt"></i> Rating:
                   {%if current_rating%}
                     <span class="float-right">{{ current_rating }}</span>
                   {%else%}
                     <p>No rating made for this listing yet</p>
                   {%endif%}
-                </li>
+                </li> -->
               </ul>
             </div>
             <div class="col-md-6">
@@ -118,11 +118,11 @@
                   <span class="float-right">{{ listing.owner.first_name }}
                   </span>
                 </li>
-                <li class="list-group-item text-secondary">
+<!--                 <li class="list-group-item text-secondary">
                     <i class="fas fa-phone"></i> Phone No:
                     <span class="float-right">{{ listing.owner.phone }}
                     </span>
-                  </li>
+                  </li> -->
 
 
               </ul>
@@ -152,7 +152,7 @@
             </form>
           {%endif%}
           <br>
-          {%if rate%}
+<!--           {%if rate%}
             <form action="{%url 'listing' listing.id%}" method="POST">
               {%csrf_token%}
               <div style="display: flex;">
@@ -166,7 +166,7 @@
                 <p>Please login to rate this listing</p>
               {%endif%}
             </form>
-          {%endif%}
+          {%endif%} -->
         </div>
       </div>
     </div>
