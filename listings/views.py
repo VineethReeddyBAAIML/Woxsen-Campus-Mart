@@ -8,11 +8,13 @@ from django.contrib.auth.decorators import login_required
 from .forms import ListingForm, UpdateForm
 def listings(request):
     listings = Listing.objects.order_by('-list_date').filter(is_published=True)
+    today = datetime.datetime.now().strftime("%I:%M%p on %B %d, %Y")
     paginator = Paginator(listings, 9)
     page = request.GET.get('page')
     page_listings  = paginator.get_page(page)
     context = {
         'listings': page_listings
+        'today':today
     }
     return render(request, 'listings/listings.html', context)
 
