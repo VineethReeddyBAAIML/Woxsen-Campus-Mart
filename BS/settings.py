@@ -15,7 +15,7 @@ import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATABASE_URL ="postgresql://postgres:XfDzdEQi0ZTxWe3WnbAJ@containers-us-west-121.railway.app:7429/railway"
+DATABASE_URL ="postgresql://postgres:HqxyatXAmlbVURIEDyIb@containers-us-west-29.railway.app:7645/railway"
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
@@ -50,6 +50,10 @@ INSTALLED_APPS = [
 
 
 ]
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
+
+CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -167,9 +171,9 @@ EMAIL_HOST_USER = 'gvineethreddy17@gmail.com'
 EMAIL_HOST_PASSWORD = 'pspcqvroxtycnlif'
 EMAIL_USE_TLS = True
 
-# CRISPY_TEMPLATE_PACK = 'uni_form'
+#CRISPY_TEMPLATE_PACK = 'uni_form'
 #CRISPY_ALLOWED_TEMPLATE_PACKS = ('bootstrap', 'uni_form', 'foundation-5')
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
+#CRISPY_TEMPLATE_PACK = 'bootstrap4'
 CSRF_TRUSTED_ORIGINS=["https://woxsen-campus-mart-production.up.railway.app"] 
 CORS_ALLOWED_ORIGINS = [
     'https://woxsen-campus-mart-production.up.railway.app',
