@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'accounts',
     'inquiry',
     'crispy_forms',
-    'crispy_bootsrap4'
+
 
 ]
 
@@ -64,8 +64,6 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'BS.urls'
 
-CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
-CRISPY_TEMPLATE_PACK='bootstrap4'
 
 TEMPLATES = [
     {
