@@ -37,32 +37,43 @@ def register(request):
             'phone': phone,
             'password': password,
         }
-
-        if password == password2:
-            if user.objects.filter(username=username).exists():
-                messages.error(request, 'Username is already taken')
-                return redirect('register')
+        i = 0
+        while i != len(email):
+            if email[i:] == '@woxsen.edu.in':
+                validation = 'valid email'
+                break
             else:
-                if user.objects.filter(email=email).exists():
-                    messages.error(request, 'Email is already used')
+                validation = 'inValid email'
+            i = i+1
+        if validation == 'valid email':
+            if password == password2:
+                if user.objects.filter(username=username).exists():
+                    messages.error(request, 'Username is already taken')
                     return redirect('register')
                 else:
-                    if user.objects.filter(phone=phone).exists():
-                        messages.error(request, 'Phone no  is already used')
+                    if user.objects.filter(email=email).exists():
+                        messages.error(request, 'Email is already used')
                         return redirect('register')
                     else:
-                        send_mail(
-                            'Account Creation Confirmation',
-                            'Hi '+ first_name + ' You Confirmation code is: ' +code,
-                            'cristomathew7@gmail.com',
-                            [email],
-                            fail_silently=False
-                        )
-                        request.method = 'GET'
-                        return render(request, 'accounts/confirmregister.html', context)
+                        if user.objects.filter(phone=phone).exists():
+                            messages.error(request, 'Phone no  is already used')
+                            return redirect('register')
+                        else:
+                            send_mail(
+                                'Account Creation Confirmation',
+                                'Hi '+ first_name + ' You Confirmation code is: ' +code,
+                                'cristomathew7@gmail.com',
+                                [email],
+                                fail_silently=False
+                            )
+                            request.method = 'GET'
+                            return render(request, 'accounts/confirmregister.html', context)
+            else:
+                messages.error(request,'passwords donot match')
+                return redirect('register')
         else:
-            messages.error(request,'passwords donot match')
-            return redirect('register')
+             messages.error(request, 'You must have Woxsen Email')
+             return redirect('register')
     else:
         return render(request, 'accounts/register.html')
 
