@@ -1,13 +1,12 @@
 category_choices = {
   'Electronics': 'Electronics',
-  'Property': 'Property',
   'Cars': 'Cars',
   'Furniture': 'Furniture',
-  'Jobs': 'Jobs',
   'Mobiles': 'Mobiles',
   'Bikes': 'Bikes',
   'Books&Sports': 'Books&Sports',
-  'Fashion': 'Fashion'
+  'Fashion': 'Fashion',
+  'other':'other'
   }
 
 price_choices = {
@@ -47,7 +46,7 @@ state_choices = {
   'RJ': 'Rajasthan',
   'MI': 'Sikkim',
   'TN': 'Tamil Nadu',
-  'TS': 'Telegana',
+  'TS': 'Telangana',
   'TR': 'Tripura',
   'UP': 'Uttar Pradesh',
   'UK': 'Uttarakhand',
