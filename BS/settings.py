@@ -15,7 +15,7 @@ import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATABASE_URL ="postgresql://postgres:jnzFmOgubQIzxPWricGe@containers-us-west-103.railway.app:6801/railway"
+DATABASE_URL ="postgresql://postgres:XfDzdEQi0ZTxWe3WnbAJ@containers-us-west-121.railway.app:7429/railway"
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
@@ -169,7 +169,7 @@ EMAIL_USE_TLS = True
 
 # CRISPY_TEMPLATE_PACK = 'uni_form'
 #CRISPY_ALLOWED_TEMPLATE_PACKS = ('bootstrap', 'uni_form', 'foundation-5')
-CRISPY_TEMPLATE_PACK = 'bootstrap'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 CSRF_TRUSTED_ORIGINS=["https://woxsen-campus-mart-production.up.railway.app"] 
 CORS_ALLOWED_ORIGINS = [
     'https://woxsen-campus-mart-production.up.railway.app',
