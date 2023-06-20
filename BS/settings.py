@@ -166,7 +166,7 @@ MESSAGE_TAGS = {
 }
 
 EMAIL_HOST = 'smtp.office365.com'
-EMAIL_PORT = 587
+EMAIL_PORT = 588
 EMAIL_HOST_USER = 'airesearchcentre@woxsen.edu.in'
 EMAIL_HOST_PASSWORD = 'Mar00265'
 EMAIL_USE_TLS = True
