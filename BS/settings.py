@@ -165,7 +165,7 @@ MESSAGE_TAGS = {
     messages.SUCCESS: 'success',
 }
 
-EMAIL_HOST = 'smtp-mail.outlook.com'
+EMAIL_HOST = 'smtp.office365.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'airesearchcentre@woxsen.edu.in'
 EMAIL_HOST_PASSWORD = 'Mar00265'
