@@ -165,10 +165,10 @@ MESSAGE_TAGS = {
     messages.SUCCESS: 'success',
 }
 
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST = 'smtp-mail.outlook.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'gvineethreddy17@gmail.com'
-EMAIL_HOST_PASSWORD = 'pspcqvroxtycnlif'
+EMAIL_HOST_USER = 'airesearchcentre@woxsen.edu.in'
+EMAIL_HOST_PASSWORD = 'Mar00265'
 EMAIL_USE_TLS = True
 
 #CRISPY_TEMPLATE_PACK = 'uni_form'
