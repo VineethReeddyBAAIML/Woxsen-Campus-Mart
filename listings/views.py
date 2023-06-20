@@ -117,7 +117,8 @@ def create(request):
         else:
             pass
     else:
-        return render(request,'listings/create.html',{'form': ListingForm()})
+        form = ListingForm(None)
+        return render(request,'listings/create.html',{'form': form})
 
 
 @login_required
