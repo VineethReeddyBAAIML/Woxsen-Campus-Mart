@@ -76,7 +76,11 @@
       </div>
     </div>
   </section>
-
+  <style>
+      #new{
+          max-height: 300px ;
+      }
+  </style>
   <!-- Listings -->
   <section id="listings" class="py-5">
     <div class="container">
@@ -86,7 +90,7 @@
         {% for listing in listings %}
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="card listing-preview">
-            <img class="card-img-top" src="{{ listing.photo_main.url }}" alt="">
+            <img class="card-img-top" src="{{ listing.photo_main.url }}" id="new" alt="">
             <div class="card-img-overlay">
               <h2>
                 <span class="badge badge-secondary text-white">₹ {{ listing.price | intcomma }}</span>
