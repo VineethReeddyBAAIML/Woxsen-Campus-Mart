@@ -69,10 +69,10 @@ def register(request):
                             request.method = 'GET'
                             return render(request, 'accounts/confirmregister.html', context)
             else:
-                messages.error(request,'passwords donot match')
+                messages.error(request,'passwords do not match')
                 return redirect('register')
         else:
-             messages.error(request, 'You must have Woxsen Email')
+             messages.error(request, 'You must have Woxsen Email id')
              return redirect('register')
     else:
         return render(request, 'accounts/register.html')
